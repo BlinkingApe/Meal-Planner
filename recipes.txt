@@ -1,5 +1,3 @@
-
-*Omelet
 Brussel sprouts w apple (optional hamburger & potatoes for casserole)
 Chick Pea Curry
 Chicken & Avo salad w toppings (Avo, Chicken, Feta etc.)
@@ -16,6 +14,12 @@ Insalata Caprese (Tomatos&Mozzarella)
 Lentil soup
 Potato salad with fresh herbs, baby spinach, peas and eggs
 Potato soup w weenies
+    Potatoes
+    Carrots
+    Bruewurst
+    vegetable broth
+    sour cream
+    chives
 Pumpkin lasagna
 Pumpkin soup
 Red beet risotto
@@ -27,6 +31,17 @@ tuna casserole
 Tuna with veggies
 Veggie "casserole" w carrots, fennel, zucchini and bell pepper topped w goat cream cheese and pine nuts
 Veggie Chili
+    Olive oil
+    onion
+    bell pepper
+    carrot
+    tomatoes(canned)
+    kidneyBeans
+    Pintobeans?
+    Black beans
+    vegetable broth
+    sour cream
+    cheddar
 Veggie curry
 Veggie lasagna
 Veggie Pasta and red sauce

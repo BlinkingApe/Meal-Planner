@@ -1,18 +1,20 @@
 
-
 apple
 avacado
 beets
 bell pepper
 black bean
 broccoli
+bruewurst
 brussel sprout
 butter
 cabbage
 carrot
+cheddar
 chick peas
 chicken
 chicory
+chives
 chuck
 corn
 egg
@@ -31,10 +33,13 @@ milk
 mozzarella
 mushroom
 oats
+olive oil
+onion
 pasta
 peas
 pine nuts
 potato
+pumpkin
 rice
 romaine
 salmon
@@ -44,6 +49,8 @@ steak
 sugar
 sweet potato
 tomato
+tomato canned
 tuna
 tuna steak
+vegetable broth
 zucchini

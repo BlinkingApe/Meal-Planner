@@ -76,6 +76,15 @@ class Broccoli(Ingredient):
         self.grams = grams
 
 
+class Bruewurst(Ingredient):
+    def __init__(self, grams):
+        super().__init__(name='Bruewurst',
+                         nutrition=[225, 20, 0.2, 12],
+                         store='aldi',
+                         section=5)
+        self.grams = grams
+
+
 class BrusselSprouts(Ingredient):
     def __init__(self, grams):
         super().__init__(name='Brussel Sprouts',
@@ -112,6 +121,15 @@ class Carrot(Ingredient):
         self.grams = grams
 
 
+class Cheddar(Ingredient):
+    def __init__(self, grams):
+        super().__init__(name='Cheddar',
+                         nutrition=[402, 33, 1.3, 25],
+                         store='aldi',
+                         section=5)
+        self.grams = grams
+
+
 class Chickpeas(Ingredient):
     def __init__(self, grams):
         super().__init__(name='Chickpeas',
@@ -134,6 +152,15 @@ class Chicory(Ingredient):
     def __init__(self, grams):
         super().__init__(name='Chicory',
                          nutrition=[23, 0.3, 4.7, 1.7],
+                         store='aldi',
+                         section=5)
+        self.grams = grams
+
+
+class Chives(Ingredient):
+    def __init__(self, grams):
+        super().__init__(name='Chuck',
+                         nutrition=[30, 0.7, 4.4, 3.3],
                          store='aldi',
                          section=5)
         self.grams = grams
@@ -301,6 +328,24 @@ class Oats(Ingredient):
         self.grams = grams
 
 
+class OliveOil(Ingredient):
+    def __init__(self, grams):
+        super().__init__(name='Olive Oil',
+                         nutrition=[884, 14, 0, 0],
+                         store='dm',
+                         section=0)
+        self.grams = grams
+
+
+class Onion(Ingredient):
+    def __init__(self, grams):
+        super().__init__(name='Onion',
+                         nutrition=[40, 0.1, 9, 1.1],
+                         store='dm',
+                         section=0)
+        self.grams = grams
+
+
 class Pasta(Ingredient):
     def __init__(self, grams):
         super().__init__(name='Pasta',
@@ -427,6 +472,15 @@ class Tomato(Ingredient):
         self.grams = grams
 
 
+class TomatoCanned(Ingredient):
+    def __init__(self, grams):
+        super().__init__(name='Tomato(Canned)',
+                         nutrition=[32, 0.3, 7, 1.6],
+                         store='aldi',
+                         section=5)
+        self.grams = grams
+
+
 class Tuna(Ingredient):
     def __init__(self, grams):
         super().__init__(name='Tuna',
@@ -442,6 +496,15 @@ class TunaSteak(Ingredient):
                          nutrition=[130, 0.6, 0, 28.7],
                          store='dm',
                          section=0)
+        self.grams = grams
+
+
+class VegetableBroth(Ingredient):
+    def __init__(self, grams):
+        super().__init__(name='Vegetable Broth',
+                         nutrition=[6, 0, 1, 0.3],
+                         store='aldi',
+                         section=5)
         self.grams = grams
 
 
