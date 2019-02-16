@@ -7,8 +7,7 @@ def main():
     mp.prompt_number_meals()
     mp.select_random_meals()
     mp.prompt_approve_meals()
-    mp.print_meal_plan()
-    mp.print_shopping_list()
+    mp.write_to_file()
 
 
 if __name__ == '__main__':

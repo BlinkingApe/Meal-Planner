@@ -18,6 +18,7 @@ DOES
 '''
 
 import meals
+import os
 import random
 
 
@@ -64,23 +65,58 @@ class MealPlan():
                     del self.meal_plan[rejected_meal - 1]
                     self.select_random_meals()
                 elif rejected_meal == 0:
+                    self.make_shopping_list()
                     break
                 else:
                     print("Must be a number between 1 and " + str(self.number_meals) + ", or '0', try again...")
             except ValueError:
                 print("Oops! Must be a single integer, try again...")
 
-    def print_shopping_list(self):
+    def make_shopping_list(self):
         total_ingredients = {}
         for meal in self.meal_plan:
-            for key, value in meal().ing_dict().items():
+            for key, value in meal().ingredients_dict().items():
                 if key in total_ingredients:
                     total_ingredients[key] += value
                 else:
                     total_ingredients[key] = value
         self.shopping_list = dict(sorted(total_ingredients.items()))
-        print("")
-        print("Ingredients:")
-        print("--------")
-        for key, value in self.shopping_list.items():
-            print(key + ': ' + str(value) + ' grams')
+
+    def write_to_file(self):
+        try:
+            os.remove('mealplan_output.txt')
+        except OSError:
+            pass
+
+        with open('mealplan_details.txt', 'a') as f:
+            f.write('-------\n')
+            f.write('Meals\n')
+            f.write('-------\n')
+
+            for meal in self.meal_plan:
+                f.write("%s\n" % meal().name)
+            f.write('\n-------\n')
+            f.write('Shopping List\n')
+            f.write('-------\n')
+            for key, value in self.shopping_list.items():
+                f.write("%s: %s grams\n" % (key, str(value)))
+
+            for meal in self.meal_plan:
+                f.write('\n************\n')
+                f.write(meal().name)
+                f.write('\n************\n')
+                f.write('-------\n')
+                f.write('Ingredients\n')
+                f.write('-------\n')
+                for key, value in meal().ingredients_dict().items():
+                    f.write('%s: %s grams\n' % (key, str(value)))
+                f.write('\n-------\n')
+                f.write('Nutrition\n')
+                f.write('-------\n')
+                for key, value in meal().nutrition_dict().items():
+                    f.write('%s: %s grams\n' % (key, str(value)))
+                f.write('\n-------\n')
+                f.write('Recipe\n')
+                f.write('-------\n')
+                f.write(meal().recipe + '\n')
+        print("Written to 'mealplan_details.txt'")
