@@ -12,19 +12,24 @@ class Meal():
 
     '''
 
-    def __init__(self, name, servings, ingredients):
+    def __init__(self, name, ingredients, recipe):
         self.name = name
-        self.servings = servings
         self.ingredients = ingredients
+        self.recipe = recipe
 
-    def stats(self):
+    def nutrition_dict(self):
         args = []
         for ing in self.ingredients:
             args.append(ing.stats())
         meal_stats = list(map(sum, zip(*args)))
-        return [round(x, 1) for x in meal_stats]
+        rounded_stats = [round(x, 1) for x in meal_stats]
+        nutr_dict = {'Calories': rounded_stats[0],
+                     'Fat': rounded_stats[1],
+                     'Carbs': rounded_stats[2],
+                     'Protein': rounded_stats[3]}
+        return nutr_dict
 
-    def ing_dict(self):
+    def ingredients_dict(self):
         ing_dict = {}
         for ing in self.ingredients:
             key = ing.name
@@ -36,274 +41,301 @@ class Meal():
 class Brussel_Sprouts_Apples(Meal):
     def __init__(self):
         super().__init__(name='Brussel Sprouts w/ Apples',
-                         servings=1,
                          ingredients=[i.BrusselSprouts(1),
-                                      i.Apple(1)])
+                                      i.Apple(1)],
+                         recipe="none")
 
 
 class Brussel_Sprouts_Apples_Hamburger(Meal):
     def __init__(self):
         super().__init__(name='Brussel Sprouts w/ Apples, Hamburger, and Potatoes',
-                         servings=1,
                          ingredients=[i.BrusselSprouts(1),
                                       i.Apple(1),
                                       i.Hamburger(1),
-                                      i.Potato(1)])
+                                      i.Potato(1)],
+                         recipe="none")
 
 
 class Chickpea_Curry(Meal):
     def __init__(self):
         super().__init__(name='Chickpea Curry',
-                         servings=1,
-                         ingredients=[i.Chickpeas(1)])
+                         ingredients=[i.Chickpeas(1)],
+                         recipe="none")
 
 
 class Chicken_Avacado_Salad(Meal):
     def __init__(self):
         super().__init__(name='Chicken & Avacado salad',
-                         servings=1,
                          ingredients=[i.Chicken(1),
                                       i.Avacado(1),
-                                      i.Romaine(1)])
+                                      i.Romaine(1)],
+                         recipe="none")
 
 
 class Chicken_Black_Bean_Chili(Meal):
     def __init__(self):
         super().__init__(name='Chicken & Black Bean Chili',
-                         servings=1,
                          ingredients=[i.Chicken(1),
-                                      i.BlackBeans(1)])
+                                      i.BlackBeans(1)],
+                         recipe="none")
 
 
 class Chicken_Broccoli_Pasta(Meal):
     def __init__(self):
         super().__init__(name='Chicken & Broccoli Pasta',
-                         servings=1,
                          ingredients=[i.Chicken(1),
                                       i.Broccoli(1),
-                                      i.Pasta(1)])
+                                      i.Pasta(1)],
+                         recipe="none")
 
 
 class Chicken_Pasta_Creamy(Meal):
     def __init__(self):
         super().__init__(name='Chicken Pasta w/ creamy sauce',
-                         servings=1,
                          ingredients=[i.Chicken(1),
-                                      i.Pasta(1)])
+                                      i.Pasta(1)],
+                         recipe="none")
 
 
 class Chicken_Soup(Meal):
     def __init__(self):
         super().__init__(name='Chicken Soup',
-                         servings=1,
-                         ingredients=[i.Chicken(1)])
+                         ingredients=[i.Chicken(1)],
+                         recipe="none")
 
 
 class Chicory_Ham_Mashed_Potatoes(Meal):
     def __init__(self):
         super().__init__(name='Chicory & Ham w/ mashed potatoes',
-                         servings=1,
                          ingredients=[i.Chicory(1),
                                       i.Ham(1),
-                                      i.Potato(1)])
+                                      i.Potato(1)],
+                         recipe="none")
 
 
 class Eggs_Spinach_Potato(Meal):
     def __init__(self):
         super().__init__(name='Eggs w/ Spinach & Potatoes',
-                         servings=1,
-                         ingredients=[i.Egg(1),
-                                      i.Spinach(1),
-                                      i.Potato(1)])
+                         ingredients=[i.Egg(300),
+                                      i.Spinach(250),
+                                      i.Potato(800),
+                                      i.OliveOil(35),
+                                      i.Onion(40),
+                                      i.Butter(40),
+                                      i.Milk(200),
+                                      i.Flour(5)],
+                         recipe="none")
 
 
 class Feta_Zucchini_Rice(Meal):
     def __init__(self):
         super().__init__(name='Feta Zucchini Rice w/ Bell Pepper',
-                         servings=1,
                          ingredients=[i.Feta(1),
                                       i.Zucchini(1),
                                       i.Rice(1),
-                                      i.BellPepper(1)])
+                                      i.BellPepper(1)],
+                         recipe="none")
 
 
 class Frikos_Kohlrabi_Potato(Meal):
     def __init__(self):
         super().__init__(name='Frikos w/ Kohlrabi & Potatoes',
-                         servings=1,
                          ingredients=[i.Hamburger(1),
                                       i.Kohlrabi(1),
-                                      i.Potato(1)])
+                                      i.Potato(1)],
+                         recipe="none")
 
 
 class Hamburger_Cabbage_Potatoes(Meal):
     def __init__(self):
         super().__init__(name='Hamburger w/ Cabbage and Potatoes',
-                         servings=1,
                          ingredients=[i.Hamburger(400),
                                       i.Cabbage(500),
                                       i.Potato(200),
-                                      i.SourCream(100)])
+                                      i.SourCream(100)],
+                         recipe="none")
 
 
 class Hamburger_Chili(Meal):
     def __init__(self):
         super().__init__(name='Hamburger Chili',
-                         servings=1,
                          ingredients=[i.Hamburger(1),
                                       i.KidneyBeans(1),
                                       i.Corn(1),
                                       i.Carrot(1),
-                                      i.BellPepper(1)])
+                                      i.BellPepper(1)],
+                         recipe="none")
+
+
+class Hamburger_Zucchini_Pasta(Meal):
+    def __init__(self):
+        super().__init__(name='Hamburger & Zucchini Pasta',
+                         ingredients=[i.Hamburger(350),
+                                      i.Zucchini(350),
+                                      i.SourCream(100),
+                                      i.Pasta(350),
+                                      i.BellPepper(250)],
+                         recipe="none")
+
+
+class Hamburger_Zucchini_Rice(Meal):
+    def __init__(self):
+        super().__init__(name='Hamburger & Zucchini w/ Rice',
+                         ingredients=[i.Hamburger(350),
+                                      i.Zucchini(350),
+                                      i.SourCream(100),
+                                      i.Rice(250),
+                                      i.BellPepper(250)],
+                         recipe="none")
 
 
 class Insalata_Caprese(Meal):
     def __init__(self):
         super().__init__(name='Insalata Caprese',
-                         servings=1,
                          ingredients=[i.Tomato(1),
-                                      i.Mozzarella(1)])
+                                      i.Mozzarella(1)],
+                         recipe="none")
 
 
 class Hamburger_Feta_Rice(Meal):
     def __init__(self):
         super().__init__(name='Hamburger w/ Feta and Rice',
-                         servings=1,
                          ingredients=[i.Hamburger(400),
                                       i.Feta(500),
                                       i.BellPepper(200),
-                                      i.Rice(100)])
+                                      i.Rice(100)],
+                         recipe="none")
 
 
 class Lentil_Soup(Meal):
     def __init__(self):
         super().__init__(name='Lentil Soup',
-                         servings=1,
-                         ingredients=[i.Lentils(1)])
+                         ingredients=[i.Lentils(1)],
+                         recipe="none")
 
 
 class Potato_Salad(Meal):
     def __init__(self):
         super().__init__(name='Potato Salad',
-                         servings=1,
-                         ingredients=[i.Potato(1)])
+                         ingredients=[i.Potato(1)],
+                         recipe="none")
 
 
 class Potato_Soup(Meal):
     def __init__(self):
         super().__init__(name='Potato Soup',
-                         servings=1,
-                         ingredients=[i.Potato(1),
-                                      i.Carrot(1),
-                                      i.Bruewurst(1),
-                                      i.VegetableBroth(1),
-                                      i.SourCream(1),
-                                      i.Chives(1)])
+                         ingredients=[i.Potato(1000),
+                                      i.Carrot(400),
+                                      i.Bruewurst(360),
+                                      i.VegetableBroth(25),
+                                      i.SourCream(100),
+                                      i.Chives(20)],
+                         recipe="none")
 
 
 class Red_Beet_Risotto(Meal):
     def __init__(self):
         super().__init__(name='Red Beet Risotto',
-                         servings=1,
-                         ingredients=[i.Beets(1)])
+                         ingredients=[i.Beets(1)],
+                         recipe="none")
 
 
 class Salmon_Veggies(Meal):
     def __init__(self):
         super().__init__(name='Salmon w/ Roasted Veggies',
-                         servings=1,
-                         ingredients=[i.Salmon(1)])
+                         ingredients=[i.Salmon(1)],
+                         recipe="none")
 
 
 class Steak_Veggies(Meal):
     def __init__(self):
         super().__init__(name='Steak w/ Roasted Veggies',
-                         servings=1,
-                         ingredients=[i.Steak(1)])
+                         ingredients=[i.Steak(1)],
+                         recipe="none")
 
 
 class Stew(Meal):
     def __init__(self):
         super().__init__(name='Stew',
-                         servings=1,
                          ingredients=[i.Chuck(1),
                                       i.Carrot(1),
-                                      i.Potato(1)])
+                                      i.Potato(1)],
+                         recipe="none")
 
 
 class Stir_Fry(Meal):
     def __init__(self):
         super().__init__(name='Stir Fry',
-                         servings=1,
                          ingredients=[i.Cabbage(1),
-                                      i.Carrot(1)])
+                                      i.Carrot(1)],
+                         recipe="none")
 
 
 class Tuna_Casserole(Meal):
     def __init__(self):
         super().__init__(name='Tuna Casserole',
-                         servings=1,
                          ingredients=[i.Tuna(500),
                                       i.Pasta(500),
                                       i.Peas(500),
-                                      i.Gouda(100)])
+                                      i.Gouda(100)],
+                         recipe="none")
 
 
 class Tuna_Veggies(Meal):
     def __init__(self):
         super().__init__(name='Tuna Steak w/ Veggies',
-                         servings=1,
                          ingredients=[i.TunaSteak(1),
-                                      i.Carrot(1)])
+                                      i.Carrot(1)],
+                         recipe="none")
 
 
 class Veggie_Casserole(Meal):
     def __init__(self):
         super().__init__(name='Veggie Casserole',
-                         servings=1,
                          ingredients=[i.Carrot(1),
                                       i.Fennel(1),
                                       i.Zucchini(1),
                                       i.BellPepper(1),
                                       i.GoatCreamCheese(1),
-                                      i.PineNuts(1)])
+                                      i.PineNuts(1)],
+                         recipe="none")
 
 
 class Veggie_Chili(Meal):
     def __init__(self):
         super().__init__(name='Veggie Chili',
-                         servings=1,
-                         ingredients=[i.OliveOil(1),
-                                      i.Onion(1),
-                                      i.BellPepper(1),
-                                      i.Carrot(1),
-                                      i.TomatoCanned(1),
-                                      i.KidneyBeans(1),
-                                      i.BlackBeans(1),
-                                      i.VegetableBroth(1),
+                         ingredients=[i.OliveOil(30),
+                                      i.Onion(125),
+                                      i.BellPepper(350),
+                                      i.Carrot(300),
+                                      i.TomatoCanned(800),
+                                      i.KidneyBeans(500),
+                                      i.BlackBeans(500),
+                                      i.VegetableBroth(10),
                                       i.SourCream(1),
-                                      i.Cheddar(1)])
+                                      i.Cheddar(1)],
+                         recipe="none")
 
 
 class Veggie_Curry(Meal):
     def __init__(self):
         super().__init__(name='Veggie Curry',
-                         servings=1,
                          ingredients=[i.Zucchini(1),
-                                      i.Carrot(1)])
+                                      i.Carrot(1)],
+                         recipe="none")
 
 
 class Veggie_Lasagna(Meal):
     def __init__(self):
         super().__init__(name='Veggie Lasagna',
-                         servings=1,
                          ingredients=[i.Pumpkin(1),
-                                      i.Carrot(1)])
+                                      i.Carrot(1)],
+                         recipe="none")
 
 
 class Veggie_Pasta(Meal):
     def __init__(self):
         super().__init__(name='Veggie Pasta w/ Red Sauce',
-                         servings=1,
                          ingredients=[i.Pasta(1),
-                                      i.Carrot(1)])
+                                      i.Carrot(1)],
+                         recipe="none")
