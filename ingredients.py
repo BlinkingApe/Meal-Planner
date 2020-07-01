@@ -211,6 +211,15 @@ class Feta(Ingredient):
         self.grams = grams
 
 
+class Flour(Ingredient):
+    def __init__(self, grams):
+        super().__init__(name='Feta',
+                         nutrition=[364, 1, 76, 10],
+                         store='aldi',
+                         section=5)
+        self.grams = grams
+
+
 class GoatCreamCheese(Ingredient):
     def __init__(self, grams):
         super().__init__(name='Goat Cream Cheese',

@@ -1,0 +1,201 @@
+-------
+Meals
+-------
+Stew
+Steak w/ Roasted Veggies
+Chickpea Curry
+Eggs w/ Spinach & Potatoes
+Hamburger & Zucchini w/ Rice
+Chicory & Ham w/ mashed potatoes
+Veggie Curry
+
+-------
+Shopping List
+-------
+Bell Pepper: 250 grams
+Butter: 110 grams
+Carrot: 2 grams
+Chickpeas: 1 grams
+Chicory: 500 grams
+Chuck: 1 grams
+Egg: 300 grams
+Feta: 21 grams
+Gouda: 150 grams
+Ham: 150 grams
+Hamburger: 350 grams
+Milk: 850 grams
+Olive Oil: 35 grams
+Onion: 40 grams
+Potato: 1801 grams
+Rice: 250 grams
+Sour Cream: 100 grams
+Spinach: 250 grams
+Steak: 1 grams
+Zucchini: 351 grams
+
+************
+Stew
+************
+-------
+Ingredients
+-------
+Chuck: 1 grams
+Carrot: 1 grams
+Potato: 1 grams
+
+-------
+Nutrition
+-------
+Calories: 4.0 grams
+Fat: 0.2 grams
+Carbs: 0.3 grams
+Protein: 0.2 grams
+
+-------
+Recipe
+-------
+none
+
+************
+Steak w/ Roasted Veggies
+************
+-------
+Ingredients
+-------
+Steak: 1 grams
+
+-------
+Nutrition
+-------
+Calories: 2.7 grams
+Fat: 0.2 grams
+Carbs: 0.0 grams
+Protein: 0.2 grams
+
+-------
+Recipe
+-------
+none
+
+************
+Chickpea Curry
+************
+-------
+Ingredients
+-------
+Chickpeas: 1 grams
+
+-------
+Nutrition
+-------
+Calories: 3.6 grams
+Fat: 0.1 grams
+Carbs: 0.6 grams
+Protein: 0.2 grams
+
+-------
+Recipe
+-------
+none
+
+************
+Eggs w/ Spinach & Potatoes
+************
+-------
+Ingredients
+-------
+Egg: 300 grams
+Spinach: 250 grams
+Potato: 800 grams
+Olive Oil: 35 grams
+Onion: 40 grams
+Butter: 40 grams
+Milk: 200 grams
+Feta: 5 grams
+
+-------
+Nutrition
+-------
+Calories: 1902.7 grams
+Fat: 80.1 grams
+Carbs: 158.7 grams
+Protein: 70.2 grams
+
+-------
+Recipe
+-------
+none
+
+************
+Hamburger & Zucchini w/ Rice
+************
+-------
+Ingredients
+-------
+Hamburger: 350 grams
+Zucchini: 350 grams
+Sour Cream: 100 grams
+Rice: 250 grams
+Bell Pepper: 250 grams
+
+-------
+Nutrition
+-------
+Calories: 2307.5 grams
+Fat: 118.6 grams
+Carbs: 221.3 grams
+Protein: 73.2 grams
+
+-------
+Recipe
+-------
+none
+
+************
+Chicory & Ham w/ mashed potatoes
+************
+-------
+Ingredients
+-------
+Chicory: 500 grams
+Ham: 150 grams
+Potato: 1000 grams
+Butter: 70 grams
+Milk: 650 grams
+Feta: 16 grams
+Gouda: 150 grams
+
+-------
+Nutrition
+-------
+Calories: 2618.5 grams
+Fat: 130.7 grams
+Carbs: 242.5 grams
+Protein: 120.6 grams
+
+-------
+Recipe
+-------
+Peel and boil potatoes. Blanch chicory for 5 minutes, then cut in half lengthwise and wrap in hame slices. Place these in casserole dish. Melt 40 grams butter, add flour and stir, add 500 grams milk and whisk until creamy. Cover chicory in sauce, top with cheese, and bake at 200 for 20 minutes. Drain potatoes, add 30 grams butter and 150 grams milk, then mash. Add salt and nutmeg to taste, add milk if too dry.
+
+************
+Veggie Curry
+************
+-------
+Ingredients
+-------
+Zucchini: 1 grams
+Carrot: 1 grams
+
+-------
+Nutrition
+-------
+Calories: 0.6 grams
+Fat: 0.0 grams
+Carbs: 0.1 grams
+Protein: 0.0 grams
+
+-------
+Recipe
+-------
+none
